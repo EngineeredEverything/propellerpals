@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propeller Pals - STEM Adventures for Kids</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', -apple-system, sans-serif; background: #fff; color: #333; }
+    nav { padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    nav .logo { font-weight: 900; font-size: 1.5rem; color: #2563eb; }
+    nav .logo span { color: #f59e0b; }
+    nav .links a { color: #666; text-decoration: none; margin-left: 25px; font-size: 0.95rem; font-weight: 600; }
+    .hero { padding: 80px 20px; text-align: center; background: linear-gradient(180deg, #e0f2fe 0%, #fff 100%); }
+    .hero h1 { font-size: 3rem; color: #2563eb; margin-bottom: 15px; }
+    .hero p { color: #666; font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
+    .hero .cta { background: #f59e0b; color: #fff; padding: 15px 40px; font-weight: bold; text-decoration: none; border-radius: 30px; display: inline-block; font-size: 1.1rem; }
+    .characters { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+    .characters h2 { text-align: center; color: #2563eb; font-size: 2rem; margin-bottom: 40px; }
+    .char-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; }
+    .char-card { background: #f8fafc; border-radius: 20px; padding: 25px; text-align: center; transition: transform 0.2s; }
+    .char-card:hover { transform: translateY(-5px); }
+    .char-card .avatar { font-size: 4rem; margin-bottom: 15px; }
+    .char-card h3 { color: #2563eb; margin-bottom: 5px; }
+    .char-card p { color: #888; font-size: 0.85rem; }
+    .learn { background: #2563eb; color: #fff; padding: 60px 20px; text-align: center; }
+    .learn h2 { margin-bottom: 20px; }
+    .learn p { opacity: 0.9; max-width: 600px; margin: 0 auto 30px; }
+    .topics { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .topic { background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 20px; font-size: 0.9rem; }
+    .shop { padding: 60px 20px; text-align: center; background: #fffbeb; }
+    .shop h2 { color: #f59e0b; margin-bottom: 30px; }
+    .products { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    .product { background: #fff; padding: 20px; border-radius: 15px; width: 200px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .product .img { font-size: 3rem; margin-bottom: 10px; }
+    .product h3 { font-size: 1rem; color: #333; }
+    .product .price { color: #f59e0b; font-weight: bold; margin-top: 5px; }
+    footer { background: #1e3a5f; color: #fff; padding: 40px 20px; text-align: center; }
+    footer p { opacity: 0.7; font-size: 0.9rem; }
+    .mockup-badge { position: fixed; top: 10px; right: 10px; background: #f59e0b; color: #000; padding: 8px 15px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; z-index: 1000; }
+  </style>
+</head>
+<body>
+  <div class="mockup-badge">🎨 MOCKUP</div>
+  <nav>
+    <div class="logo">🚁 Propeller <span>Pals</span></div>
+    <div class="links">
+      <a href="#">Characters</a>
+      <a href="#">Learn</a>
+      <a href="#">Shop</a>
+      <a href="#">Parents</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <h1>Adventures in Propeller Town! 🌊</h1>
+    <p>Join Connie, Heli, Drifty and friends as they explore STEM, teamwork, and the amazing world of things that spin!</p>
+    <a href="#" class="cta">Meet the Pals!</a>
+  </div>
+  <section class="characters">
+    <h2>Meet the Pals!</h2>
+    <div class="char-grid">
+      <div class="char-card">
+        <div class="avatar">🚢</div>
+        <h3>Connie</h3>
+        <p>The wise containership who teaches patience</p>
+      </div>
+      <div class="char-card">
+        <div class="avatar">🚁</div>
+        <h3>Heli</h3>
+        <p>Coast Guard hero, always ready to help!</p>
+      </div>
+      <div class="char-card">
+        <div class="avatar">🛸</div>
+        <h3>Drifty</h3>
+        <p>Curious drone who loves technology</p>
+      </div>
+      <div class="char-card">
+        <div class="avatar">🚤</div>
+        <h3>Tuggy Tug</h3>
+        <p>Strong little tugboat with a big heart</p>
+      </div>
+      <div class="char-card">
+        <div class="avatar">✈️</div>
+        <h3>Pete</h3>
+        <p>The C-17 who delivers anywhere</p>
+      </div>
+      <div class="char-card">
+        <div class="avatar">🛶</div>
+        <h3>Fannie</h3>
+        <p>Swamp-exploring fan boat adventurer</p>
+      </div>
+    </div>
+  </section>
+  <section class="learn">
+    <h2>Learn While You Play! 📚</h2>
+    <p>Every adventure teaches real STEM concepts in fun, kid-friendly ways</p>
+    <div class="topics">
+      <span class="topic">🌊 Navigation</span>
+      <span class="topic">⚙️ Propulsion</span>
+      <span class="topic">🌤️ Weather</span>
+      <span class="topic">📦 Logistics</span>
+      <span class="topic">🤝 Teamwork</span>
+    </div>
+  </section>
+  <section class="shop">
+    <h2>🛍️ Propeller Pals Shop</h2>
+    <div class="products">
+      <div class="product">
+        <div class="img">📚</div>
+        <h3>Story Books</h3>
+        <div class="price">$12.99</div>
+      </div>
+      <div class="product">
+        <div class="img">🧸</div>
+        <h3>Plush Pals</h3>
+        <div class="price">$19.99</div>
+      </div>
+      <div class="product">
+        <div class="img">🎨</div>
+        <h3>Activity Kit</h3>
+        <div class="price">$14.99</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 Propeller Pals. Educational entertainment for ages 4-8. | Parents Portal | Contact</p>
+  </footer>
+<script src="/js/feedback-widget.js" data-bot="propellerpals"></script>
+</body>
+</html>
