@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Propeller Pals - STEM Adventures for Kids Ages 4-8 | Educational Toys & Books</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Propeller Pals brings STEM learning to life for kids ages 4-8! Join Connie, Heli, Drifty and friends in Propeller Town for educational adventures about helicopters, drones, boats, and teamwork.">
-  <meta name="keywords" content="STEM toys for kids, educational children's books, propeller toys, helicopter toys, drone education, kids STEM learning, Propeller Town, children's educational media, ages 4-8, teamwork for kids">
-  <meta name="author" content="Propeller Pals">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph (Facebook/LinkedIn) -->
-  <meta property="og:title" content="Propeller Pals - STEM Adventures for Kids">
-  <meta property="og:description" content="Join Connie, Heli, Drifty and friends in Propeller Town! Educational STEM adventures for kids ages 4-8 featuring helicopters, drones, boats, and teamwork.">
-  <meta property="og:image" content="https://propellerpals.com/images/og-image.png">
-  <meta property="og:url" content="https://propellerpals.com">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Propeller Pals">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Propeller Pals — STEM Adventures for Curious Kids</title>
+  <meta name="description" content="Propeller Pals is a children's STEM book series featuring propeller-driven vehicles on adventures in Propeller Town. Perfect for ages 4–8." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Propeller Pals — STEM Adventures for Curious Kids" />
+  <meta property="og:description" content="Meet Tuggy Tug, Heli, Connie, and friends! Fun STEM adventures for curious kids ages 4–8, set in the harbor town of Propeller Town." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://propellerpals.com" />
+  <meta property="og:image" content="https://propellerpals.com/assets/og-image.jpg" />
+
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Propeller Pals - STEM Adventures for Kids">
-  <meta name="twitter:description" content="Educational STEM adventures for kids ages 4-8. Meet the Pals and explore Propeller Town!">
-  <meta name="twitter:image" content="https://propellerpals.com/images/twitter-card.png">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://propellerpals.com/">
-  
-  <!-- JSON-LD Structured Data: Organization -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Propeller Pals — STEM Adventures for Curious Kids" />
+  <meta name="twitter:description" content="Meet Tuggy Tug, Heli, Connie, and friends! Fun STEM adventures for curious kids ages 4–8." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://propellerpals.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <meta name="theme-color" content="#0369a1" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Nunito', 'sans-serif'],
+            body: ['Nunito Sans', 'sans-serif'],
+          },
+          colors: {
+            ocean: {
+              50:  '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            harbor: {
+              50:  '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            grass: {
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Propeller Pals",
     "url": "https://propellerpals.com",
-    "logo": "https://propellerpals.com/images/logo.png",
-    "description": "Educational STEM media company creating books, toys, and adventures for children ages 4-8",
-    "foundingDate": "2026",
+    "description": "Children's STEM book series featuring propeller-driven vehicles. Ages 4–8.",
+    "foundingDate": "2024",
+    "genre": ["Children's Books", "STEM Education"],
+    "audience": {
+      "@type": "PeopleAudience",
+      "suggestedMinAge": 4,
+      "suggestedMaxAge": 8
+    },
     "sameAs": []
   }
   </script>
-  
-  <!-- JSON-LD Structured Data: Product (Story Books) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Propeller Pals Story Books",
-    "description": "Educational STEM story books featuring Connie, Heli, Drifty and friends. Perfect for kids ages 4-8.",
-    "brand": {"@type": "Brand", "name": "Propeller Pals"},
-    "audience": {"@type": "PeopleAudience", "suggestedMinAge": 4, "suggestedMaxAge": 8},
-    "offers": {
-      "@type": "Offer",
-      "price": "12.99",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
-    }
-  }
-  </script>
-  
-  <!-- JSON-LD: FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -68,34 +99,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is Propeller Pals?",
+        "name": "What age group is Propeller Pals for?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Propeller Pals is an educational STEM media brand for children ages 4-8. Set in Propeller Town (inspired by Charleston, SC), it features characters like Connie the Containership, Heli the Helicopter, and Drifty the Drone who teach kids about propulsion, navigation, weather, logistics, and teamwork through fun adventures."
+          "text": "Propeller Pals books are designed for children ages 4–8, with board book editions ideal for ages 4–6 and early reader editions for ages 6–8."
         }
       },
       {
         "@type": "Question",
-        "name": "What products do you sell?",
+        "name": "What does Propeller Pals teach?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We offer STEM-focused story books ($12.99), plush character toys ($19.99), and activity kits ($14.99). All products are designed to be educational, safe, and fun for children ages 4-8."
+          "text": "Each Propeller Pals story teaches one clear STEM concept — like how propellers create thrust, why boats float, or how helicopters lift off — through fun, gentle adventures with lovable vehicle characters."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I order?",
+        "name": "Where is Propeller Town?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can order directly from our Shop section on propellerpals.com. We accept all major credit cards and ship throughout the United States. Orders typically ship within 2-3 business days."
+          "text": "Propeller Town is a fictional harbor city inspired by Charleston, South Carolina — full of boats, cranes, helicopters, fan boats, and all kinds of propeller-powered vehicles."
         }
       },
       {
         "@type": "Question",
-        "name": "What age is Propeller Pals for?",
+        "name": "Where can I buy Propeller Pals books?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Propeller Pals is designed for children ages 4-8. The content is engaging enough for the whole family while being age-appropriate and educational for young learners."
+          "text": "Our first book is coming soon! Sign up for our newsletter to be notified when it launches on Amazon and at local bookstores and gift shops."
         }
       }
     ]
@@ -103,160 +134,420 @@
   </script>
 
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Nunito', -apple-system, sans-serif; background: #fff; color: #333; }
-    nav { padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    nav .logo { font-weight: 900; font-size: 1.5rem; color: #2563eb; }
-    nav .logo span { color: #f59e0b; }
-    nav .links a { color: #666; text-decoration: none; margin-left: 25px; font-size: 0.95rem; font-weight: 600; }
-    .hero { padding: 80px 20px; text-align: center; background: linear-gradient(180deg, #e0f2fe 0%, #fff 100%); }
-    .hero h1 { font-size: 3rem; color: #2563eb; margin-bottom: 15px; }
-    .hero p { color: #666; font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
-    .hero .cta { background: #f59e0b; color: #fff; padding: 15px 40px; font-weight: bold; text-decoration: none; border-radius: 30px; display: inline-block; font-size: 1.1rem; }
-    .characters { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-    .characters h2 { text-align: center; color: #2563eb; font-size: 2rem; margin-bottom: 40px; }
-    .char-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; }
-    .char-card { background: #f8fafc; border-radius: 20px; padding: 25px; text-align: center; transition: transform 0.2s; }
-    .char-card:hover { transform: translateY(-5px); }
-    .char-card .avatar { font-size: 4rem; margin-bottom: 15px; }
-    .char-card h3 { color: #2563eb; margin-bottom: 5px; }
-    .char-card p { color: #888; font-size: 0.85rem; }
-    .learn { background: #2563eb; color: #fff; padding: 60px 20px; text-align: center; }
-    .learn h2 { margin-bottom: 20px; }
-    .learn p { opacity: 0.9; max-width: 600px; margin: 0 auto 30px; }
-    .topics { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-    .topic { background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 20px; font-size: 0.9rem; }
-    .shop { padding: 60px 20px; text-align: center; background: #fffbeb; }
-    .shop h2 { color: #f59e0b; margin-bottom: 30px; }
-    .products { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-    .product { background: #fff; padding: 20px; border-radius: 15px; width: 200px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-    .product .img { font-size: 3rem; margin-bottom: 10px; }
-    .product h3 { font-size: 1rem; color: #333; }
-    .product .price { color: #f59e0b; font-weight: bold; margin-top: 5px; }
-    .faq { padding: 60px 20px; max-width: 800px; margin: 0 auto; }
-    .faq h2 { text-align: center; color: #2563eb; font-size: 2rem; margin-bottom: 40px; }
-    .faq-item { background: #f8fafc; border-radius: 12px; padding: 20px; margin-bottom: 15px; }
-    .faq-item h3 { color: #2563eb; font-size: 1.1rem; margin-bottom: 10px; }
-    .faq-item p { color: #666; line-height: 1.6; }
-    footer { background: #1e3a5f; color: #fff; padding: 40px 20px; text-align: center; }
-    footer p { opacity: 0.7; font-size: 0.9rem; }
-    .mockup-badge { position: fixed; top: 10px; right: 10px; background: #f59e0b; color: #000; padding: 8px 15px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; z-index: 1000; }
+    body { font-family: 'Nunito Sans', sans-serif; }
+    .wave-divider { clip-path: ellipse(75% 100% at 50% 0%); }
+    .wave-bottom { clip-path: ellipse(75% 100% at 50% 100%); }
+    .character-card:hover { transform: translateY(-6px) rotate(1deg); }
+    .character-card { transition: transform 0.25s ease; }
+    @keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    .bob { animation: bob 3s ease-in-out infinite; }
+    @keyframes spin-slow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    .spin-slow { animation: spin-slow 8s linear infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0) rotate(-2deg)} 50%{transform:translateY(-14px) rotate(2deg)} }
+    .float { animation: float 4s ease-in-out infinite; }
   </style>
 </head>
-<body>
-  <div class="mockup-badge">🎨 MOCKUP</div>
-  <nav>
-    <div class="logo">🚁 Propeller <span>Pals</span></div>
-    <div class="links">
-      <a href="#characters">Characters</a>
-      <a href="#learn">Learn</a>
-      <a href="#shop">Shop</a>
-      <a href="#faq">FAQ</a>
-      <a href="#">Parents</a>
-    </div>
-  </nav>
-  <div class="hero">
-    <h1>Adventures in Propeller Town! 🌊</h1>
-    <p>Join Connie, Heli, Drifty and friends as they explore STEM, teamwork, and the amazing world of things that spin!</p>
-    <a href="#shop" class="cta">Meet the Pals!</a>
-  </div>
-  <section class="characters" id="characters">
-    <h2>Meet the Pals!</h2>
-    <div class="char-grid">
-      <div class="char-card">
-        <div class="avatar">🚢</div>
-        <h3>Connie</h3>
-        <p>The wise containership who teaches patience</p>
-      </div>
-      <div class="char-card">
-        <div class="avatar">🚁</div>
-        <h3>Heli</h3>
-        <p>Coast Guard hero, always ready to help!</p>
-      </div>
-      <div class="char-card">
-        <div class="avatar">🛸</div>
-        <h3>Drifty</h3>
-        <p>Curious drone who loves technology</p>
-      </div>
-      <div class="char-card">
-        <div class="avatar">🚤</div>
-        <h3>Tuggy Tug</h3>
-        <p>Strong little tugboat with a big heart</p>
-      </div>
-      <div class="char-card">
-        <div class="avatar">✈️</div>
-        <h3>Pete</h3>
-        <p>The C-17 who delivers anywhere</p>
-      </div>
-      <div class="char-card">
-        <div class="avatar">🛶</div>
-        <h3>Fannie</h3>
-        <p>Swamp-exploring fan boat adventurer</p>
-      </div>
-    </div>
-  </section>
-  <section class="learn" id="learn">
-    <h2>Learn While You Play! 📚</h2>
-    <p>Every adventure teaches real STEM concepts in fun, kid-friendly ways</p>
-    <div class="topics">
-      <span class="topic">🌊 Navigation</span>
-      <span class="topic">⚙️ Propulsion</span>
-      <span class="topic">🌤️ Weather</span>
-      <span class="topic">📦 Logistics</span>
-      <span class="topic">🤝 Teamwork</span>
-    </div>
-  </section>
-  <section class="shop" id="shop">
-    <h2>🛍️ Propeller Pals Shop</h2>
-    <div class="products">
-      <div class="product">
-        <div class="img">📚</div>
-        <h3>Story Books</h3>
-        <div class="price">$12.99</div>
-      </div>
-      <div class="product">
-        <div class="img">🧸</div>
-        <h3>Plush Pals</h3>
-        <div class="price">$19.99</div>
-      </div>
-      <div class="product">
-        <div class="img">🎨</div>
-        <h3>Activity Kit</h3>
-        <div class="price">$14.99</div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- FAQ Section -->
-  <section class="faq" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h3>What is Propeller Pals?</h3>
-      <p>Propeller Pals is an educational STEM media brand for children ages 4-8. Set in Propeller Town (inspired by Charleston, SC), it features characters like Connie the Containership, Heli the Helicopter, and Drifty the Drone who teach kids about propulsion, navigation, weather, logistics, and teamwork through fun adventures.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What products do you sell?</h3>
-      <p>We offer STEM-focused story books ($12.99), plush character toys ($19.99), and activity kits ($14.99). All products are designed to be educational, safe, and fun for children ages 4-8.</p>
-    </div>
-    <div class="faq-item">
-      <h3>How do I order?</h3>
-      <p>You can order directly from our Shop section above. We accept all major credit cards and ship throughout the United States. Orders typically ship within 2-3 business days.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What age is Propeller Pals for?</h3>
-      <p>Propeller Pals is designed for children ages 4-8. The content is engaging enough for the whole family while being age-appropriate and educational for young learners.</p>
-    </div>
-  </section>
-  
-  <footer>
-    <p>© 2026 Propeller Pals. Educational entertainment for ages 4-8. | Parents Portal | Contact</p>
-  </footer>
-<script src="/js/feedback-widget.js" data-bot="propellerpals"></script>
+<body class="bg-ocean-50 font-body overflow-x-hidden">
 
-<!-- Feedback Widget -->
-<style>.fb-btn{position:fixed;bottom:15px;right:15px;background:rgba(0,0,0,0.05);color:#6b7280;padding:8px 14px;border-radius:20px;cursor:pointer;font-size:12px;z-index:9999;border:1px solid rgba(0,0,0,0.1);transition:all 0.2s;opacity:0.4}.fb-btn:hover{opacity:1;background:rgba(0,0,0,0.08);transform:translateY(-1px)}.fb-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:10000;align-items:center;justify-content:center}.fb-modal.active{display:flex}.fb-content{background:#fff;padding:30px;border-radius:12px;max-width:500px;width:90%}.fb-content h3{margin:0 0 20px;color:#1f2937}.fb-content textarea,.fb-content input{width:100%;padding:12px;margin-bottom:15px;border:1px solid #d1d5db;border-radius:6px;font-size:14px}.fb-content textarea{min-height:120px}.fb-btns{display:flex;gap:10px;justify-content:flex-end}.fb-btns button{padding:10px 20px;border-radius:6px;border:none;cursor:pointer;font-weight:600}.fb-submit{background:#3b82f6;color:#fff}.fb-cancel{background:#e5e7eb;color:#374151}.fb-ok{color:#10b981;margin-top:10px;display:none}</style>
-<button class="fb-btn" onclick="openFB()">💬 Feedback</button>
-<div class="fb-modal" id="fbModal"><div class="fb-content"><h3>Send Feedback</h3><input id="fbEmail" placeholder="Your email (optional)"><textarea id="fbMsg" placeholder="Share your thoughts, report a bug, or request a feature..."></textarea><div class="fb-btns"><button class="fb-cancel" onclick="closeFB()">Cancel</button><button class="fb-submit" onclick="sendFB()">Submit</button></div><div class="fb-ok" id="fbOk">✅ Thank you! Your feedback has been sent.</div></div></div>
-<script>function openFB(){document.getElementById('fbModal').classList.add('active')}function closeFB(){document.getElementById('fbModal').classList.remove('active');document.getElementById('fbMsg').value='';document.getElementById('fbEmail').value='';document.getElementById('fbOk').style.display='none'}function sendFB(){const msg=document.getElementById('fbMsg').value;if(!msg.trim()){alert('Please enter a message');return}console.log('Feedback:',{site:location.hostname,msg});document.getElementById('fbOk').style.display='block';setTimeout(closeFB,2000)}document.getElementById('fbModal').onclick=function(e){if(e.target===this)closeFB()}</script>
+  <!-- ===== HERO ===== -->
+  <header class="relative bg-gradient-to-b from-ocean-700 via-ocean-600 to-ocean-400 text-white overflow-hidden" style="min-height:100vh;">
+    <!-- Sky clouds (decorative) -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-8 left-[8%] w-32 h-12 bg-white/20 rounded-full blur-xl"></div>
+      <div class="absolute top-12 left-[20%] w-48 h-14 bg-white/15 rounded-full blur-xl"></div>
+      <div class="absolute top-6 right-[15%] w-40 h-10 bg-white/15 rounded-full blur-xl"></div>
+      <div class="absolute top-16 right-[30%] w-56 h-12 bg-white/10 rounded-full blur-2xl"></div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="relative z-10 flex items-center justify-between px-6 py-5 max-w-6xl mx-auto">
+      <div class="flex items-center gap-2">
+        <span class="text-4xl">⚙️</span>
+        <span class="font-display font-900 text-xl tracking-tight">Propeller Pals</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="#characters" class="hover:text-harbor-300 transition-colors">Characters</a>
+        <a href="#books" class="hover:text-harbor-300 transition-colors">Books</a>
+        <a href="#stem" class="hover:text-harbor-300 transition-colors">STEM</a>
+        <a href="#faq" class="hover:text-harbor-300 transition-colors">FAQ</a>
+        <a href="#newsletter" class="bg-harbor-500 hover:bg-harbor-600 text-white px-4 py-2 rounded-full transition-colors">Get Notified</a>
+      </div>
+      <a href="#newsletter" class="md:hidden bg-harbor-500 hover:bg-harbor-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">Get Notified</a>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 flex flex-col items-center text-center px-6 pt-10 pb-32 max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-sm font-semibold mb-6">
+        <span>🚢</span> <span>First book coming soon!</span>
+      </div>
+      <h1 class="font-display font-900 text-5xl md:text-7xl leading-tight mb-6">
+        Big Adventures<br/>
+        <span class="text-harbor-300">in Propeller Town</span>
+      </h1>
+      <p class="text-lg md:text-xl text-ocean-100 max-w-2xl mb-8 leading-relaxed">
+        Meet Tuggy Tug, Heli, Connie, and friends — a crew of propeller-powered pals on STEM adventures built for curious kids ages 4–8.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#newsletter" class="bg-harbor-500 hover:bg-harbor-400 text-white font-display font-800 text-lg px-8 py-4 rounded-2xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
+          🔔 Notify Me at Launch
+        </a>
+        <a href="#characters" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/40 text-white font-display font-700 text-lg px-8 py-4 rounded-2xl transition-all">
+          Meet the Crew →
+        </a>
+      </div>
+
+      <!-- Floating characters -->
+      <div class="mt-16 flex items-end justify-center gap-6 md:gap-12">
+        <div class="bob" style="animation-delay:0s">
+          <div class="text-7xl md:text-8xl drop-shadow-lg">⛴️</div>
+          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Tuggy Tug</p>
+        </div>
+        <div class="bob" style="animation-delay:0.5s">
+          <div class="text-8xl md:text-9xl drop-shadow-lg">🚢</div>
+          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Connie</p>
+        </div>
+        <div class="float" style="animation-delay:0.3s">
+          <div class="text-7xl md:text-8xl drop-shadow-lg">🚁</div>
+          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Heli</p>
+        </div>
+        <div class="bob" style="animation-delay:0.8s">
+          <div class="text-6xl md:text-7xl drop-shadow-lg">🛥️</div>
+          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Fannie</p>
+        </div>
+        <div class="float" style="animation-delay:0.6s">
+          <div class="text-5xl md:text-6xl drop-shadow-lg">🚁</div>
+          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Drifty</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f9ff"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ===== WHY PROPELLER PALS ===== -->
+  <section class="py-20 px-6 bg-ocean-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-display font-900 text-4xl md:text-5xl text-ocean-900 mb-4">Why Kids (and Parents) Love Us</h2>
+      <p class="text-ocean-600 text-lg mb-14 max-w-2xl mx-auto">Every Propeller Pals story entertains first — and teaches second. No lectures. No talking down to kids. Just great adventures.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-ocean-100 text-left">
+          <div class="text-5xl mb-4">🔬</div>
+          <h3 class="font-display font-800 text-xl text-ocean-900 mb-2">Real STEM, Simply Told</h3>
+          <p class="text-ocean-600 leading-relaxed">Each book teaches one real engineering concept — propulsion, buoyancy, navigation — through story, not slides.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-ocean-100 text-left">
+          <div class="text-5xl mb-4">💛</div>
+          <h3 class="font-display font-800 text-xl text-ocean-900 mb-2">Characters Kids Root For</h3>
+          <p class="text-ocean-600 leading-relaxed">Tuggy, Heli, Connie, Drifty — each pal has a real job, a clear personality, and a team to depend on.</p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-ocean-100 text-left">
+          <div class="text-5xl mb-4">📖</div>
+          <h3 class="font-display font-800 text-xl text-ocean-900 mb-2">Built for Bedtime</h3>
+          <p class="text-ocean-600 leading-relaxed">Calm pacing, gentle problem-solving, and a satisfying finish — the formula for a book kids ask to read again and again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHARACTERS ===== -->
+  <section id="characters" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="font-display font-900 text-4xl md:text-5xl text-ocean-900 mb-3">Meet the Crew</h2>
+        <p class="text-ocean-600 text-lg max-w-xl mx-auto">Each Propeller Pal lives and works in Propeller Town — a bustling harbor city where every vehicle has a story.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+
+        <div class="character-card bg-gradient-to-b from-ocean-100 to-ocean-50 rounded-3xl p-6 text-center cursor-default border border-ocean-200">
+          <div class="text-6xl mb-3">⛴️</div>
+          <h3 class="font-display font-900 text-lg text-ocean-900">Tuggy Tug</h3>
+          <p class="text-sm text-ocean-500 font-semibold mb-2">The Helper of the Harbor</p>
+          <p class="text-xs text-ocean-600 leading-relaxed">Small but mighty, Tuggy guides big ships safely to dock. Teaches: <strong>propulsion & push/pull forces</strong></p>
+        </div>
+
+        <div class="character-card bg-gradient-to-b from-sky-100 to-sky-50 rounded-3xl p-6 text-center cursor-default border border-sky-200">
+          <div class="text-6xl mb-3">🚁</div>
+          <h3 class="font-display font-900 text-lg text-ocean-900">Heli</h3>
+          <p class="text-sm text-sky-500 font-semibold mb-2">Coast Guard Helicopter</p>
+          <p class="text-xs text-ocean-600 leading-relaxed">Always ready to respond, Heli spots trouble from the sky. Teaches: <strong>lift, rotation & rescue</strong></p>
+        </div>
+
+        <div class="character-card bg-gradient-to-b from-harbor-100 to-harbor-50 rounded-3xl p-6 text-center cursor-default border border-harbor-200">
+          <div class="text-6xl mb-3">🚢</div>
+          <h3 class="font-display font-900 text-lg text-ocean-900">Connie</h3>
+          <p class="text-sm text-harbor-500 font-semibold mb-2">The Containership</p>
+          <p class="text-xs text-ocean-600 leading-relaxed">Connie crosses oceans carrying cargo from all over the world. Teaches: <strong>global trade & navigation</strong></p>
+        </div>
+
+        <div class="character-card bg-gradient-to-b from-grass-100 to-grass-50 rounded-3xl p-6 text-center cursor-default border border-grass-200" style="background-image:linear-gradient(to bottom, #dcfce7, #f0fdf4)">
+          <div class="text-6xl mb-3">🛥️</div>
+          <h3 class="font-display font-900 text-lg text-ocean-900">Fannie</h3>
+          <p class="text-sm text-grass-600 font-semibold mb-2">Fan Boat Explorer</p>
+          <p class="text-xs text-ocean-600 leading-relaxed">Fannie glides through the wetlands on a cushion of air. Teaches: <strong>ecosystems & air thrust</strong></p>
+        </div>
+
+        <div class="character-card bg-gradient-to-b from-purple-100 to-purple-50 rounded-3xl p-6 text-center cursor-default border border-purple-200">
+          <div class="text-6xl mb-3">🚁</div>
+          <h3 class="font-display font-900 text-lg text-ocean-900">Drifty</h3>
+          <p class="text-sm text-purple-500 font-semibold mb-2">The Curious Drone</p>
+          <p class="text-xs text-ocean-600 leading-relaxed">Drifty sees everything from above and loves to learn. Teaches: <strong>observation & technology</strong></p>
+        </div>
+
+        <div class="character-card bg-gradient-to-b from-blue-100 to-blue-50 rounded-3xl p-6 text-center cursor-default border border-blue-200">
+          <div class="text-6xl mb-3">✈️</div>
+          <h3 class="font-display font-900 text-lg text-ocean-900">Pete</h3>
+          <p class="text-sm text-blue-500 font-semibold mb-2">C-17 Transport</p>
+          <p class="text-xs text-ocean-600 leading-relaxed">Pete carries big loads and works with the whole team. Teaches: <strong>aviation & logistics</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKS (COMING SOON) ===== -->
+  <section id="books" class="py-20 px-6 bg-gradient-to-b from-ocean-700 to-ocean-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-10">
+      <div class="absolute top-10 left-10 text-9xl">⚓</div>
+      <div class="absolute bottom-10 right-10 text-9xl">🌊</div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem]">⛵</div>
+    </div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-harbor-500/30 border border-harbor-400/40 rounded-full px-4 py-2 text-sm font-semibold mb-6">
+        <span>📚</span> <span>Coming Soon</span>
+      </div>
+      <h2 class="font-display font-900 text-4xl md:text-5xl mb-6">Our First Book is Almost Here</h2>
+      <p class="text-ocean-200 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+        <strong class="text-white">"Tuggy Tug's Big Day"</strong> — a 24-page board book where Tuggy helps a giant ship dock safely in Propeller Town harbor, learning all about propellers and teamwork along the way.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-left">
+          <div class="text-3xl mb-2">📏</div>
+          <p class="font-display font-800 text-sm">Format</p>
+          <p class="text-ocean-200 text-sm">24-page board book, 8"×8"</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-left">
+          <div class="text-3xl mb-2">👧</div>
+          <p class="font-display font-800 text-sm">Ages</p>
+          <p class="text-ocean-200 text-sm">4–6 (early reader 6–8)</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-left">
+          <div class="text-3xl mb-2">🔬</div>
+          <p class="font-display font-800 text-sm">STEM Focus</p>
+          <p class="text-ocean-200 text-sm">Propulsion & push/pull forces</p>
+        </div>
+      </div>
+      <a href="#newsletter" class="inline-block bg-harbor-500 hover:bg-harbor-400 text-white font-display font-800 text-lg px-10 py-4 rounded-2xl shadow-xl transition-all hover:-translate-y-0.5">
+        🔔 Notify Me at Launch
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== STEM SECTION ===== -->
+  <section id="stem" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="font-display font-900 text-4xl md:text-5xl text-ocean-900 mb-3">Learning That Doesn't Feel Like Homework</h2>
+        <p class="text-ocean-600 text-lg max-w-2xl mx-auto">Every story embeds one key concept from real engineering, navigation, or marine science — the way kids actually learn: through characters they love.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-ocean-100 rounded-2xl flex items-center justify-center text-2xl">⚙️</div>
+          <div>
+            <h3 class="font-display font-800 text-lg text-ocean-900 mb-1">How Propellers Work</h3>
+            <p class="text-ocean-600 text-sm leading-relaxed">Spinning blades push water or air backward — which pushes the vehicle forward. Newton's Third Law, made simple.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-harbor-100 rounded-2xl flex items-center justify-center text-2xl">🌊</div>
+          <div>
+            <h3 class="font-display font-800 text-lg text-ocean-900 mb-1">Why Boats Float</h3>
+            <p class="text-ocean-600 text-sm leading-relaxed">Buoyancy, displacement, and hull design — the science of floating told through Connie and Tuggy's adventures.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-grass-100 rounded-2xl flex items-center justify-center text-2xl">🧭</div>
+          <div>
+            <h3 class="font-display font-800 text-lg text-ocean-900 mb-1">Navigation Basics</h3>
+            <p class="text-ocean-600 text-sm leading-relaxed">Left and right, compass directions, reading maps — practical skills woven naturally into every adventure.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center text-2xl">🚁</div>
+          <div>
+            <h3 class="font-display font-800 text-lg text-ocean-900 mb-1">How Helicopters Fly</h3>
+            <p class="text-ocean-600 text-sm leading-relaxed">Lift, rotation, and hover — Heli the Coast Guard helicopter shows kids the science of staying up in the air.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-2xl">🌿</div>
+          <div>
+            <h3 class="font-display font-800 text-lg text-ocean-900 mb-1">Wetland Ecosystems</h3>
+            <p class="text-ocean-600 text-sm leading-relaxed">Fannie's marshy home is full of life — birds, fish, and plants that depend on each other, explored gently story by story.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-2xl flex items-center justify-center text-2xl">🤝</div>
+          <div>
+            <h3 class="font-display font-800 text-lg text-ocean-900 mb-1">Teamwork & Problem Solving</h3>
+            <p class="text-ocean-600 text-sm leading-relaxed">Every problem in Propeller Town is solved together. Engineering thinking + cooperation = every good adventure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOR EDUCATORS ===== -->
+  <section class="py-20 px-6 bg-ocean-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-3xl p-10 shadow-sm border border-ocean-100 flex flex-col md:flex-row items-center gap-8">
+        <div class="text-7xl flex-shrink-0">🏫</div>
+        <div>
+          <h2 class="font-display font-900 text-3xl text-ocean-900 mb-3">For Teachers & Homeschoolers</h2>
+          <p class="text-ocean-600 mb-4 leading-relaxed">Propeller Pals books are designed to align with NGSS and Common Core early learning standards. Free activity guides, coloring pages, and classroom discussion prompts are available with every title.</p>
+          <ul class="text-sm text-ocean-600 space-y-1 mb-6">
+            <li>✅ Aligned with K-2 NGSS standards</li>
+            <li>✅ Printable activity worksheets (free)</li>
+            <li>✅ Discussion questions for read-alouds</li>
+            <li>✅ Bulk/classroom pricing available</li>
+            <li>✅ Author visit inquiries welcome</li>
+          </ul>
+          <a href="#newsletter" class="inline-block bg-ocean-700 hover:bg-ocean-800 text-white font-display font-700 px-6 py-3 rounded-xl text-sm transition-colors">
+            Request Educator Pack →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="py-20 px-6 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display font-900 text-4xl text-ocean-900 text-center mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="bg-ocean-50 border border-ocean-100 rounded-2xl p-6 group">
+          <summary class="font-display font-800 text-ocean-900 cursor-pointer list-none flex justify-between items-center">
+            What age group is Propeller Pals for?
+            <span class="text-ocean-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-4 text-ocean-600 leading-relaxed">Propeller Pals books are designed for children ages 4–8. Board book editions are ideal for ages 4–6, with early reader editions coming for ages 6–8.</p>
+        </details>
+        <details class="bg-ocean-50 border border-ocean-100 rounded-2xl p-6 group">
+          <summary class="font-display font-800 text-ocean-900 cursor-pointer list-none flex justify-between items-center">
+            What does Propeller Pals teach?
+            <span class="text-ocean-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-4 text-ocean-600 leading-relaxed">Each story teaches one clear STEM concept — like how propellers create thrust, why boats float, or how helicopters lift off — through fun, gentle adventures. No lectures, just great stories.</p>
+        </details>
+        <details class="bg-ocean-50 border border-ocean-100 rounded-2xl p-6 group">
+          <summary class="font-display font-800 text-ocean-900 cursor-pointer list-none flex justify-between items-center">
+            Where is Propeller Town?
+            <span class="text-ocean-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-4 text-ocean-600 leading-relaxed">Propeller Town is a fictional harbor city inspired by Charleston, South Carolina — full of boats, cranes, helicopters, fan boats, and all kinds of propeller-powered vehicles.</p>
+        </details>
+        <details class="bg-ocean-50 border border-ocean-100 rounded-2xl p-6 group">
+          <summary class="font-display font-800 text-ocean-900 cursor-pointer list-none flex justify-between items-center">
+            Where can I buy Propeller Pals books?
+            <span class="text-ocean-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-4 text-ocean-600 leading-relaxed">Our first book is launching soon! Sign up for our newsletter below to be notified the moment it goes live on Amazon and in select bookstores and gift shops.</p>
+        </details>
+        <details class="bg-ocean-50 border border-ocean-100 rounded-2xl p-6 group">
+          <summary class="font-display font-800 text-ocean-900 cursor-pointer list-none flex justify-between items-center">
+            Can I carry Propeller Pals in my store or museum?
+            <span class="text-ocean-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-4 text-ocean-600 leading-relaxed">Yes! We'd love to partner with gift shops, maritime museums, aquariums, and children's stores. Sign up below and mention you're a retailer — we'll be in touch.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section id="newsletter" class="py-24 px-6 bg-gradient-to-br from-harbor-500 to-harbor-600 text-white relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-10">
+      <div class="absolute -top-10 -right-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-2xl mx-auto text-center">
+      <div class="text-6xl mb-4">📬</div>
+      <h2 class="font-display font-900 text-4xl md:text-5xl mb-4">Be First Aboard!</h2>
+      <p class="text-harbor-100 text-lg mb-8 leading-relaxed">
+        Sign up to hear when our first book launches — plus free activity sheets, character art, and early access for educators and retailers.
+      </p>
+      <form
+        action="#"
+        method="POST"
+        onsubmit="handleSignup(event)"
+        class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email address"
+          required
+          class="flex-1 px-5 py-4 rounded-xl text-ocean-900 font-semibold placeholder-ocean-400 focus:outline-none focus:ring-2 focus:ring-white shadow-inner"
+        />
+        <button
+          type="submit"
+          class="bg-ocean-800 hover:bg-ocean-900 text-white font-display font-800 px-6 py-4 rounded-xl shadow-lg transition-all hover:-translate-y-0.5 whitespace-nowrap">
+          🚢 Join the Crew
+        </button>
+      </form>
+      <p class="text-harbor-200 text-xs mt-4">No spam. Unsubscribe anytime. Just good stuff for families and educators.</p>
+      <div id="signup-thanks" class="hidden mt-6 bg-white/20 rounded-xl p-4 font-display font-700 text-lg">
+        ✅ You're on the list! We'll be in touch soon.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-ocean-900 text-ocean-300 py-12 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+        <div class="flex items-center gap-2">
+          <span class="text-3xl">⚙️</span>
+          <span class="font-display font-900 text-white text-xl">Propeller Pals</span>
+        </div>
+        <nav class="flex flex-wrap justify-center gap-6 text-sm">
+          <a href="#characters" class="hover:text-white transition-colors">Characters</a>
+          <a href="#books" class="hover:text-white transition-colors">Books</a>
+          <a href="#stem" class="hover:text-white transition-colors">STEM</a>
+          <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+          <a href="mailto:hello@propellerpals.com" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+      <div class="border-t border-ocean-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-ocean-500">
+        <p>© 2025 Propeller Pals. All rights reserved. PROPELLER PALS™ is a registered trademark (Serial #98738258).</p>
+        <p>Made with ❤️ in Charleston, SC</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSignup(e) {
+      e.preventDefault();
+      const email = e.target.email.value;
+      // TODO: Connect to email service (Mailchimp, ConvertKit, etc.)
+      console.log('Signup:', email);
+      document.getElementById('signup-thanks').classList.remove('hidden');
+      e.target.reset();
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
