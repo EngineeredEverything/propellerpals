@@ -152,66 +152,70 @@
 <body class="bg-ocean-50 font-body overflow-x-hidden">
 
   <!-- ===== HERO ===== -->
-  <header class="relative text-white overflow-hidden" style="min-height:100vh;">
-    <!-- Hero background image -->
-    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image:url('/hero.jpg');"></div>
-    <!-- Gradient overlay: dark at top for nav/text readability, clear in middle to show art, dark at bottom -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70"></div>
+  <header class="relative text-white overflow-hidden bg-[#1a6fa8]">
 
-    <!-- Nav -->
-    <nav class="relative z-10 flex items-center justify-between px-6 py-5 max-w-6xl mx-auto">
-      <div class="flex items-center gap-2">
-        <span class="text-4xl">⚙️</span>
-        <span class="font-display font-900 text-xl tracking-tight">Propeller Pals</span>
+    <!-- Floating Nav — sits on top of the image -->
+    <nav class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4 max-w-6xl mx-auto">
+      <div class="flex items-center gap-2 drop-shadow-md">
+        <img src="/favicon-32.png" alt="Propeller Pals logo" class="w-8 h-8" />
+        <span class="font-display font-900 text-xl tracking-tight drop-shadow">Propeller Pals</span>
       </div>
-      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
-        <a href="#characters" class="hover:text-harbor-300 transition-colors">Characters</a>
-        <a href="#books" class="hover:text-harbor-300 transition-colors">Books</a>
-        <a href="#stem" class="hover:text-harbor-300 transition-colors">STEM</a>
-        <a href="#faq" class="hover:text-harbor-300 transition-colors">FAQ</a>
-        <a href="#newsletter" class="bg-harbor-500 hover:bg-harbor-600 text-white px-4 py-2 rounded-full transition-colors">Get Notified</a>
+      <div class="hidden md:flex items-center gap-5 text-sm font-semibold drop-shadow">
+        <a href="#characters" class="hover:text-yellow-300 transition-colors">Characters</a>
+        <a href="#books" class="hover:text-yellow-300 transition-colors">Books</a>
+        <a href="#stem" class="hover:text-yellow-300 transition-colors">STEM</a>
+        <a href="#faq" class="hover:text-yellow-300 transition-colors">FAQ</a>
+        <a href="#newsletter" class="bg-harbor-500 hover:bg-harbor-400 text-white px-5 py-2 rounded-full shadow-lg transition-all">Get Notified</a>
       </div>
-      <a href="#newsletter" class="md:hidden bg-harbor-500 hover:bg-harbor-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-colors">Get Notified</a>
+      <a href="#newsletter" class="md:hidden bg-harbor-500 hover:bg-harbor-400 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg transition-all">Get Notified</a>
     </nav>
 
-    <!-- Hero Content -->
-    <div class="relative z-10 flex flex-col items-center text-center px-6 pt-10 pb-32 max-w-4xl mx-auto">
-      <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-sm font-semibold mb-6">
-        <span>🚢</span> <span>First book coming soon!</span>
-      </div>
-      <h1 class="font-display font-900 text-5xl md:text-7xl leading-tight mb-6">
-        Big Adventures<br/>
-        <span class="text-harbor-300">in Propeller Town</span>
-      </h1>
-      <p class="text-lg md:text-xl text-ocean-100 max-w-2xl mb-8 leading-relaxed">
-        Meet Tuggy Tug, Heli, Connie, and friends — a crew of propeller-powered pals on STEM adventures built for curious kids ages 4–8.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="#newsletter" class="bg-harbor-500 hover:bg-harbor-400 text-white font-display font-800 text-lg px-8 py-4 rounded-2xl shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
-          🔔 Notify Me at Launch
-        </a>
-        <a href="#characters" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/40 text-white font-display font-700 text-lg px-8 py-4 rounded-2xl transition-all">
-          Meet the Crew →
-        </a>
-      </div>
+    <!-- Hero image — full width, no cropping -->
+    <div class="relative w-full">
+      <img
+        src="/hero.jpg"
+        alt="Propeller Town harbor — Connie the Containership, Heli the Coast Guard Helicopter, Pete the C-17, tugboats and cranes in a vibrant harbor inspired by Charleston, SC"
+        class="w-full object-cover object-center block"
+        style="max-height:92vh; min-height:520px;"
+      />
 
-      <!-- Scroll indicator -->
-      <div class="mt-16 flex flex-col items-center gap-2 opacity-70">
-        <p class="text-xs font-display font-700 tracking-widest uppercase text-white/80">Discover Propeller Town</p>
-        <div class="bob">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
+      <!-- Text overlay — positioned in the upper sky area where there's natural contrast -->
+      <div class="absolute inset-0 flex flex-col justify-start items-center pt-24 md:pt-28 px-4 pointer-events-none">
+        <!-- Soft blur pill behind text only -->
+        <div class="pointer-events-auto flex flex-col items-center text-center max-w-2xl">
+          <div class="inline-flex items-center gap-2 bg-white/25 backdrop-blur-md border border-white/40 rounded-full px-4 py-1.5 text-xs md:text-sm font-semibold mb-4 shadow">
+            <span>🚢</span><span>First book coming soon!</span>
+          </div>
+          <h1 class="font-display font-900 text-4xl md:text-6xl lg:text-7xl leading-tight drop-shadow-xl mb-3"
+              style="text-shadow:0 2px 16px rgba(0,0,0,0.45)">
+            Big Adventures<br/>
+            <span class="text-yellow-300">in Propeller Town</span>
+          </h1>
+          <p class="text-sm md:text-lg font-semibold mb-6 max-w-xl leading-relaxed"
+             style="text-shadow:0 1px 8px rgba(0,0,0,0.6)">
+            STEM adventures for curious kids ages 4–8 — set right here in the harbor.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="#newsletter"
+               class="bg-harbor-500 hover:bg-harbor-400 text-white font-display font-800 text-base md:text-lg px-7 py-3 md:py-4 rounded-2xl shadow-xl transition-all hover:-translate-y-0.5">
+              🔔 Notify Me at Launch
+            </a>
+            <a href="#characters"
+               class="bg-white/25 hover:bg-white/40 backdrop-blur-sm border border-white/50 text-white font-display font-700 text-base md:text-lg px-7 py-3 md:py-4 rounded-2xl shadow transition-all">
+              Meet the Crew →
+            </a>
+          </div>
         </div>
       </div>
+
+      <!-- Bottom wave transition -->
+      <div class="absolute bottom-0 left-0 right-0 pointer-events-none">
+        <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,32 C360,64 1080,0 1440,32 L1440,64 L0,64 Z" fill="#f0f9ff"/>
+        </svg>
+      </div>
     </div>
 
-    <!-- Wave -->
-    <div class="absolute bottom-0 left-0 right-0">
-      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f9ff"/>
-      </svg>
-    </div>
   </header>
 
   <!-- ===== WHY PROPELLER PALS ===== -->
