@@ -11,7 +11,7 @@
   <meta property="og:description" content="Meet Tuggy Tug, Heli, Connie, and friends! Fun STEM adventures for curious kids ages 4–8, set in the harbor town of Propeller Town." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://propellerpals.com" />
-  <meta property="og:image" content="https://propellerpals.com/assets/og-image.jpg" />
+  <meta property="og:image" content="https://propellerpals.com/hero.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -152,14 +152,11 @@
 <body class="bg-ocean-50 font-body overflow-x-hidden">
 
   <!-- ===== HERO ===== -->
-  <header class="relative bg-gradient-to-b from-ocean-700 via-ocean-600 to-ocean-400 text-white overflow-hidden" style="min-height:100vh;">
-    <!-- Sky clouds (decorative) -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-8 left-[8%] w-32 h-12 bg-white/20 rounded-full blur-xl"></div>
-      <div class="absolute top-12 left-[20%] w-48 h-14 bg-white/15 rounded-full blur-xl"></div>
-      <div class="absolute top-6 right-[15%] w-40 h-10 bg-white/15 rounded-full blur-xl"></div>
-      <div class="absolute top-16 right-[30%] w-56 h-12 bg-white/10 rounded-full blur-2xl"></div>
-    </div>
+  <header class="relative text-white overflow-hidden" style="min-height:100vh;">
+    <!-- Hero background image -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image:url('/hero.jpg');"></div>
+    <!-- Gradient overlay: dark at top for nav/text readability, clear in middle to show art, dark at bottom -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70"></div>
 
     <!-- Nav -->
     <nav class="relative z-10 flex items-center justify-between px-6 py-5 max-w-6xl mx-auto">
@@ -198,27 +195,13 @@
         </a>
       </div>
 
-      <!-- Floating characters -->
-      <div class="mt-16 flex items-end justify-center gap-6 md:gap-12">
-        <div class="bob" style="animation-delay:0s">
-          <div class="text-7xl md:text-8xl drop-shadow-lg">⛴️</div>
-          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Tuggy Tug</p>
-        </div>
-        <div class="bob" style="animation-delay:0.5s">
-          <div class="text-8xl md:text-9xl drop-shadow-lg">🚢</div>
-          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Connie</p>
-        </div>
-        <div class="float" style="animation-delay:0.3s">
-          <div class="text-7xl md:text-8xl drop-shadow-lg">🚁</div>
-          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Heli</p>
-        </div>
-        <div class="bob" style="animation-delay:0.8s">
-          <div class="text-6xl md:text-7xl drop-shadow-lg">🛥️</div>
-          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Fannie</p>
-        </div>
-        <div class="float" style="animation-delay:0.6s">
-          <div class="text-5xl md:text-6xl drop-shadow-lg">🚁</div>
-          <p class="text-xs font-display font-700 mt-1 text-ocean-100">Drifty</p>
+      <!-- Scroll indicator -->
+      <div class="mt-16 flex flex-col items-center gap-2 opacity-70">
+        <p class="text-xs font-display font-700 tracking-widest uppercase text-white/80">Discover Propeller Town</p>
+        <div class="bob">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
         </div>
       </div>
     </div>
